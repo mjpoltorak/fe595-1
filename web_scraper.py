@@ -23,8 +23,10 @@ def main():
     company = []
     #empty list of company purposes to be added to a dataframe
     purposes = []
+    
+    # Matthew Poltorak: In my code I used a for loop. While I don't think it makes any difference in terms of speed I find its more concise because you don't have to keep track of a counter variable
     while req_count <= 49:
-        try:
+        try:co
             # response get request
             resp = requests.get("http://3.95.249.159:8000/random_company",auth = ("user","pass"))
             # splitting at the company name
